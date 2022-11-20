@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-6 mt-3">
+    <h1 class="header" style="color: #ffe715">Form Update Barang</h1>
+
+    <form method="post" action="/barang?_method=PUT">
+      <input type="hidden" name="_id" value="<%= barang._id %>" />
+
+      <div class="mb-3">
+        <label for="namaBarang" class="form-label text-light">Nama Barang</label>
+        <input type="text" class="form-control" id="namaBarang" name="namaBarang" value="<%= barang.namaBarang %>" />
+      </div>
+      <div class="mb-3">
+        <label for="hargaBarang" class="form-label text-light">Harga Barang</label>
+        <input type="text" class="form-control" id="hargaBarang" name="hargaBarang" value="<%= barang.hargaBarang %>" />
+      </div>
+      <div class="mb-3">
+        <label for="qty" class="form-label text-light">Jumlah Barang</label>
+        <input type="text" class="form-control" id="qty" name="qty" value="<%= barang.qty %>" />
+      </div>
+      <div class="mb-3">
+        <label for="berat" class="form-label text-light">Berat Barang</label>
+        <input type="text" class="form-control" id="berat" name="berat" value="<%= barang.berat %>" />
+      </div>
+
+      <button type="submit" class="btn btn-warning">Update</button>
+    </form>
+  </div>
+</div>

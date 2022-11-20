@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-6 mt-3">
+    <h1 class="header text-light">Form Tambah Barang</h1>
+    <form method="POST" action="/barang" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label for="namaBarang" class="form-label text-light">Nama Barang</label>
+        <input type="text" class="form-control" id="namaBarang" name="namaBarang" />
+      </div>
+      <div class="mb-3">
+        <label for="hargaBarang" class="form-label text-light">Harga Barang</label>
+        <input type="text" class="form-control" id="hargaBarang" name="hargaBarang" />
+      </div>
+      <div class="mb-3">
+        <label for="qty" class="form-label text-light">Jumlah Barang</label>
+        <input type="text" class="form-control" id="qty" name="qty" />
+      </div>
+      <div class="mb-3">
+        <label for="berat" class="form-label text-light">Berat Barang</label>
+        <input type="text" class="form-control" id="berat" name="berat" />
+      </div>
+      <div class="mb-3">
+        <label for="image" class="form-label text-light">gambar</label>
+        <input type="file" class="form-control" id="image" name="image" />
+      </div>
+      <button type="submit" class="btn btn-warning">Tambah</button>
+    </form>
+  </div>
+</div>
